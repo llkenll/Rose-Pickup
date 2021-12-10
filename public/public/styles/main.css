@@ -1,0 +1,625 @@
+
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+
+#facts{
+    border:black solid 2px;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin: 0 -1em;
+   
+}
+.page-container {
+   
+    
+    
+    margin-top: 75px;
+
+}
+
+
+.container{
+    width: 100%;
+}
+.sportsContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selection-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 155px;
+    align-items: center;
+    row-gap: 15vh;
+   
+}
+
+.my-row{
+    display:flex;
+}
+
+.my-row button{
+  height: 150px;
+  width: 350px;
+  text-align: center;
+  font-size: 30px;
+  color:white;
+  background-color:#800000;
+  
+}
+
+.sportsList-row{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+}
+
+.sports{
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    background-color:#800000;
+    color:white;
+    font-size: 20px;
+    margin:20px 20px;
+}
+
+#roseLogo{
+    max-width: 350px;
+    display:block;
+    margin:20px auto;
+}
+
+.navbar-brand{
+    padding-left: 20px;
+}
+
+
+#roseFireBtn{
+    display:block;
+    margin: 60px auto;
+    color:white;
+    background: #800000;
+    font-size:1.1em;
+    padding:10px 30px;
+    border-radius:5px;
+}
+
+/* .sportsList{
+    display:flex;
+    justify-content: center;
+} */
+
+
+.card-title,card-subtitle{
+     margin-top: 20px;
+    margin-bottom: 10px;
+    
+    max-height: 25px;
+    overflow: hidden;
+   
+  
+   
+}
+
+
+
+.card-body{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+h4{
+    font-weight: 500;
+}
+.det{
+    font-size: 1.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+
+hr{
+    width: 100%;
+}
+.img-custom-fluid{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    max-width: 600px;
+}
+.img-fluid, .img-thumbnail {
+    width: 100%;
+    height: 100%;
+    max-height: 150px;
+    max-width: 250px;
+}
+
+.bmd-layout-content{
+    height: 100vh;
+}
+.bmd-layout-drawer>header{
+background-color: #800000;
+color:white;
+}
+.bmd-layout-drawer>ul{
+background-color: #ddd;
+}
+.list-group-item :first-child{
+    margin-right: 0.75rem;
+}
+#menuEdit,#menuDelete{
+    display: none;
+}
+
+#fab{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #800000;
+    color: white;
+    z-index: 999;
+    visibility: visible;
+
+   height:40px;
+
+    
+}
+#fab:active{
+    transform: translateY(2px);
+    opacity: .8;
+    text-align: center;
+}
+
+
+
+
+.sportsContainer{
+    height: auto;
+}
+
+.bmd-layout-drawer>header .navbar-brand {
+    padding-left: 0;
+    font-size: 1.25rem;
+}
+
+.bmd-layout-drawer>.list-group .list-group-item {
+    padding-right: 2.5rem;
+    padding-left: 1.5rem;
+    font-size: .8125rem;
+    font-weight: 500;
+}
+
+
+.bmd-form-group .bmd-label-static, .bmd-form-group.is-filled .bmd-label-floating, .bmd-form-group .is-filled .bmd-label-floating, .bmd-form-group.is-focused .bmd-label-floating, .bmd-form-group .is-focused .bmd-label-floating {
+    font-size: 1em;
+    top:1px;
+   
+}
+
+#heading{
+    margin-top:-40px;
+}
+
+.bmd-form-group{
+   margin-top: 5px;
+}
+
+#reoccuringCheck{
+    margin-bottom: 0px;
+}
+
+#author{
+    text-align: center;
+}
+
+.eventDetail{
+    text-align: center;
+}
+
+#eventDetailsPage{
+    height: 100%;
+}
+#add{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: green;
+    color: white;
+    z-index: 999; 
+    display: flex;
+    visibility: hidden;
+}
+#add:active{
+    transform: translateY(2px);
+    opacity: .8;
+}
+#joined{
+    text-align: center;
+}
+
+.user{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    
+}
+
+
+#members{
+   
+    
+   
+    height: 40px;
+    visibility: hidden;
+}
+
+#delete{
+    
+    height: 40px;
+    
+    visibility: hidden;
+}
+
+#edit{
+   
+    height: 40px;
+    visibility: hidden;
+}
+
+
+#submitName{
+    margin-top: 10px;
+    background-color: #800000;
+    color:white;
+}
+.card-title{
+    margin-bottom: 20px;
+}
+  
+
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+
+#facts{
+    border:black solid 2px;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin: 0 -1em;
+   
+}
+.page-container {
+   
+    
+    
+    margin-top: 75px;
+
+}
+
+
+.container{
+    width: 100%;
+}
+.sportsContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selection-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 155px;
+    align-items: center;
+    row-gap: 15vh;
+   
+}
+
+.my-row{
+    display:flex;
+}
+
+.my-row button{
+  height: 150px;
+  width: 350px;
+  text-align: center;
+  font-size: 30px;
+  color:white;
+  background-color:#800000;
+  
+}
+
+.sportsList-row{
+    display:flex;
+    justify-content: center;
+    gap:40px;
+}
+
+.sports{
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    background-color:#800000;
+    color:white;
+    font-size: 20px;
+    margin:20px 20px;
+}
+
+#roseLogo{
+    max-width: 350px;
+    display:block;
+    margin:20px auto;
+}
+
+.navbar-brand{
+    padding-left: 20px;
+}
+
+
+#roseFireBtn{
+    display:block;
+    margin: 60px auto;
+    color:white;
+    background: #800000;
+    font-size:1.1em;
+    padding:10px 30px;
+    border-radius:5px;
+}
+
+/* .sportsList{
+    display:flex;
+    justify-content: center;
+} */
+
+
+.card-title,card-subtitle{
+     margin-top: 20px;
+    margin-bottom: 10px;
+    
+    max-height: 25px;
+    overflow: hidden;
+   
+  
+   
+}
+
+
+
+.card-body{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+h4{
+    font-weight: 500;
+}
+.det{
+    font-size: 1.5em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+
+hr{
+    width: 100%;
+}
+.img-custom-fluid{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    max-width: 600px;
+}
+.img-fluid, .img-thumbnail {
+    width: 100%;
+    height: 100%;
+    max-height: 150px;
+    max-width: 250px;
+}
+
+.bmd-layout-content{
+    height: 100vh;
+}
+.bmd-layout-drawer>header{
+background-color: #800000;
+color:white;
+}
+.bmd-layout-drawer>ul{
+background-color: #ddd;
+}
+.list-group-item :first-child{
+    margin-right: 0.75rem;
+}
+#menuEdit,#menuDelete{
+    display: none;
+}
+
+#fab{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #800000;
+    color: white;
+    z-index: 999;
+}
+#fab:active{
+    transform: translateY(2px);
+    opacity: .8;
+}
+
+
+.sportsContainer{
+    height: auto;
+}
+
+.bmd-layout-drawer>header .navbar-brand {
+    padding-left: 0;
+    font-size: 1.25rem;
+}
+
+.bmd-layout-drawer>.list-group .list-group-item {
+    padding-right: 2.5rem;
+    padding-left: 1.5rem;
+    font-size: .8125rem;
+    font-weight: 500;
+}
+
+
+.bmd-form-group .bmd-label-static, .bmd-form-group.is-filled .bmd-label-floating, .bmd-form-group .is-filled .bmd-label-floating, .bmd-form-group.is-focused .bmd-label-floating, .bmd-form-group .is-focused .bmd-label-floating {
+    font-size: 1em;
+    top:1px;
+   
+}
+
+#heading{
+    margin-top:-40px;
+}
+
+.bmd-form-group{
+   margin-top: 5px;
+}
+
+#reoccuringCheck{
+    margin-bottom: 0px;
+}
+
+#author{
+    text-align: center;
+}
+
+.eventDetail{
+    text-align: center;
+}
+
+#eventDetailsPage{
+    height: 100%;
+}
+#add{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: green;
+    color: white;
+    z-index: 999; 
+    display: flex;
+    visibility: hidden;
+}
+#add:active{
+    transform: translateY(2px);
+    opacity: .8;
+}
+#leave{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: red;
+    color: white;
+    z-index: 999; 
+    display: hidden;
+    visibility: hidden;
+}
+#leave:active{
+    transform: translateY(2px);
+    opacity: .8;
+}
+#leave{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: red;
+    color: white;
+    z-index: 999; 
+    display: hidden;
+    visibility: hidden;
+}
+#leave:active{
+    transform: translateY(2px);
+    opacity: .8;
+}
+#joined{
+    text-align: center;
+}
+
+.user{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('https://www.rose-hulman.edu/about-us/community-and-public-services/communications-and-marketing/assets/RH_G_HiRes-RGB-1c.png');
+}
+
+
+#members{
+    height: 40px;
+    visibility: hidden;
+}
+
+#delete{
+    
+    height: 40px;
+    
+    visibility: hidden;
+}
+
+#edit{
+   
+    height: 40px;
+    visibility: hidden;
+}
+
+
+#submitName{
+    margin-top: 10px;
+    background-color: #800000;
+    color:white;
+}
+
+
+
+
+.errors{
+    visibility: hidden;
+    color:red
+}
+
+
+
+.btn, .custom-file-control:before{
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+
+.this{
+    padding:0;
+}

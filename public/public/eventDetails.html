@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title id = "title">Loading</title>
+</head>
+
+<body>
+  <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+    <header class="bmd-layout-header">
+      <div class="navbar navbar-dark bg-faded justify-content-start">
+        <button class="navbar-toggler" type="button" data-toggle="drawer"data-target="#dw-s2" aria-controls="dw-s2" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle drawer</span>
+          <i class="material-icons">menu</i>
+        </button>
+        <a class="navbar-brand" href="/selectionPage.html">&nbsp;&nbsp;Your Events</a>
+     
+      </header>
+
+      <div id="dw-s2" class="bmd-layout-drawer bg-faded">
+        <header>
+          <a class="navbar-brand">Rose Pick-up Sports</a>
+        </header>
+        <ul class="list-group">
+          <a id = "menuGoToProfilePage" class="list-group-item"><i class="material-icons">account_circle</i>My profile</a>
+          <a id="menuHome" class="list-group-item"><i class="material-icons">home</i>Home</a>
+          <a id="menuEventsJoined" class="list-group-item"><i class="material-icons">done</i>Events Joined</a>
+          <a id="menuSports" class="list-group-item"><i class="material-icons">sports</i>Sports events</a>
+          <a id="menuMyEvents" class="list-group-item"><i class="material-icons">create</i>My Events Created</a>
+          <a id="menuSignOut" class="list-group-item"><i class="material-icons">login</i>Sign Out</a>
+        </ul>
+        </div>
+     
+
+
+
+    <div id="eventDetailsPage" class="container page-container">
+        <div id = "eventContainer" class = "row justify-content-center">
+            <div class = "col-12 col-md-12 mb-5">
+               <h1><div id = "heading" class = "eventDetail"> Loading </div></h1> 
+                <h5><div id = "author">Organized by:</div></h5>
+            </div>
+            <div class = "row justify-content-center col-12 col-md-12">
+                <img src=""alt="" class="eventImg eventDetail img-custom-fluid">
+            </div>
+
+            <hr>
+        </div>
+
+
+       
+
+        <div id = "facts">
+            <h4>Details: </h4> 
+           <div class = "det" id = "detail">Loading</div><br><br>
+
+           <h4>Location: </h4> 
+            <div class = "det" id = "location">Loading</div> <br>
+           
+            <h4>Date: </h4> 
+            <div class = "det" id = "date">Loading </div> 
+
+           
+            <div class = "det" id = "fromTo">Loading </div> 
+
+
+            
+
+            <div class = "text-right" style = "width: 100%;">
+              <button class = "btn this"type="button" id="edit"><a class="list-group-item" data-toggle="modal" data-target="#editDetail"><i class="material-icons">edit</i>edit</a></button>
+            </div>
+         
+            <div class = "text-right" style = "width: 100%;">
+              <button class = "btn this"type="button" id="delete"><a class="list-group-item"><i class="material-icons">delete</i>delete</a></button>
+            </div>
+
+            <div class = "text-right" style = "width: 100%;">
+              <button class = "btn this"type="button" id="members" ><a class="list-group-item"><i class="material-icons">person</i>members</a></button>
+            </div>
+
+              
+              
+
+
+             
+
+            
+            
+  
+        </div>
+
+       
+    
+
+        <button id="add" type="button" class="btn-primary" data-toggle="modal" data-target="#joinedEvent">
+          <div>JOIN EVENT</div>
+        </button>
+        <button id="leave" type="button" class="btn-primary" data-toggle="modal" data-target="#LeaveEvent">
+          <div>LEAVE EVENT</div>
+        </button>
+       
+    
+    
+        <!--modal-->
+        <div class="modal fade" id="joinedEvent" tabindex="-1" role="dialog" aria-labelledby="add sport" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 id="joined" class="modal-title">You have joined this event</h5>
+              </div>
+              <div class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button id = "cancel" type="button" class="btn btn-secondary" data-dismiss="modal">dismiss</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="LeaveEvent" tabindex="-1" role="dialog" aria-labelledby="leave sport" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 id="joined" class="modal-title">You have left this event</h5>
+              </div>
+              <div class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button id = "cancel" type="button" class="btn btn-secondary" data-dismiss="modal">dismiss</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="editDetail" tabindex="-1" role="dialog" aria-labelledby="edit event detail" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit this event</h5>
+               
+              </div>
+              <div class="modal-body">
+                
+                  
+                  <div class="form-group bmd-form-group">
+                    <label for="inputTitle">Title</label>
+                    <input type="text" class="form-control" id="inputTitle">
+                    <span class="bmd-help">name of event</span>
+                  </div>
+                 
+                    <div class="form-group bmd-form-group">
+                      <label for="inputDate">Date and Time</label>
+                      <input type="datetime-local" id="inputDate"
+                        name="event-date-time" value="2021-10-25T08:30"
+                        min="2021-10-25T00:00" max="2022-06-14T00:00">
+                    </div>
+
+                    <label for="endTime">End Time</label>
+                      <input type="time" id="endTime" name="end time"
+                      min="09:00" required>
+                      <div id = "errorMsg" class = "errors"> Error, end time before start time</div>
+
+                    <div class="form-group bmd-form-group">
+                      <label for="inputLocation">location</label>
+                      <input type="text" class="form-control" id="inputLocation">
+                      <span class="bmd-help">location of the event</span>
+                    </div>  
+
+                    <div class="form-group bmd-form-group">
+                      <label for="inputDetail">Details</label>
+                      <textarea id="inputDetail" name="eventDetail" rows="4" cols="50"></textarea>
+                      <span class="bmd-help">details of the event</span>
+                    </div>
+        
+        
+        
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+                <button id ="submitEditEvent" type="button" class="btn btn-primary" data-dismiss="modal">Update</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-storage.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/rosefire.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function() {
+  emailjs.init("user_6a3nq00yvt1hVyDGuUArM");
+  })();
+  </script></body>
+
+</html>

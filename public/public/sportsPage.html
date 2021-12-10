@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>All Events</title>
+</head>
+
+<body>
+ 
+    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+      <header class="bmd-layout-header">
+        <div class="navbar navbar-dark bg-faded fixed-top justify-content-start">
+          <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s2">
+            <span class="sr-only">Rose Pick-up Sports</span>
+            <i class="material-icons">menu</i>
+          </button>
+          <a class="navbar-brand" href="/selectionPage.html">&nbsp;&nbsp;Pick a sport your interested in</a>
+        </div>
+      </header>
+      <div id="dw-s2" class="bmd-layout-drawer bg-faded">
+        <header>
+          <a class="navbar-brand">Rose Pick-up Sports</a>
+        </header>
+        <ul class="list-group">
+          <a id = "menuGoToProfilePage" class="list-group-item"><i class="material-icons">account_circle</i>My profile</a>
+          <a id="menuHome" class="list-group-item"><i class="material-icons">home</i>Home</a>
+          <a id="menuEventsJoined" class="list-group-item"><i class="material-icons">done</i>Events Joined</a>
+          <a id="menuSports" class="list-group-item"><i class="material-icons">sports</i>Sports events</a>
+          <a id="menuMyEvents" class="list-group-item"><i class="material-icons">create</i>My Events Created</a>
+          <a id="menuSignOut" class="list-group-item"><i class="material-icons">login</i>Sign Out</a>
+        </ul>
+      </div>
+      <main class="bmd-layout-content">
+        <div id="sportsPage" class="container page-container sportsContainer">
+          <div id = "sportBtnContainer"  class = "row justify-content-center mt-3">
+            
+          </div>
+        </div>
+      </main>
+    </div>
+  
+  
+
+
+
+
+    <button id="fab" type="button" class="btn bmd-btn-fab" data-toggle="modal" data-target="#addSport">
+      <i class="material-icons">add</i>
+    </button>
+
+
+    <!--modal-->
+    <div class="modal fade" id="addSport" tabindex="-1" role="dialog" aria-labelledby="add sport" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add Sport</h5>
+          </div>
+          <div class="modal-body">
+    
+              <div class="form-group bmd-form-group">
+                <label for="inputSport">Sport</label>
+                <input type="text" class="form-control" id="inputSport">
+                <span class="bmd-help">Name of desired sport?</span>
+              </div>
+    
+          </div>
+          <div class="modal-footer">
+            <button id = "cancel" type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+            <button id="submitAddSport"type="button" class="btn btn-primary" data-dismiss="modal">Add Sport</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
